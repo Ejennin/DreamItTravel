@@ -541,6 +541,38 @@
             font-size: 0.9rem;
         }
 
+
+        /* JENNINGS TECH FOOTER AD */
+        .jt-ad {
+            max-width: 620px;
+            margin: 1.75rem auto 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1rem 1.25rem;
+            background: linear-gradient(135deg, #0f2a22 0%, #111 100%);
+            border: 1px solid #d4af8f;
+            border-radius: 12px;
+            text-align: left;
+            color: #ddd;
+        }
+        .jt-ad img.jt-photo {
+            width: 84px; height: 84px; border-radius: 50%;
+            object-fit: cover; border: 2px solid #d4af8f; flex-shrink: 0;
+        }
+        .jt-ad .jt-copy { flex: 1; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        .jt-ad .jt-kicker { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: #d4af8f; }
+        .jt-ad .jt-head { font-size: 1.05rem; color: #fff; font-weight: 700; margin: 0.15rem 0; line-height: 1.3; }
+        .jt-ad .jt-price { color: #d4af8f; white-space: nowrap; }
+        .jt-ad .jt-sub { font-size: 0.8rem; color: #aaa; }
+        .jt-ad .jt-sub a { color: #d4af8f; text-decoration: none; }
+        .jt-ad .jt-qr { text-align: center; flex-shrink: 0; text-decoration: none; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        .jt-ad .jt-qr img { width: 84px; height: 84px; background: #fff; padding: 4px; border-radius: 6px; display: block; }
+        .jt-ad .jt-qr span { font-size: 0.6rem; color: #999; letter-spacing: 1px; text-transform: uppercase; }
+        @media (max-width: 520px) {
+            .jt-ad { flex-direction: column; text-align: center; }
+        }
+
         /* RESPONSIVE */
         @media (max-width: 1024px) {
             .why-cards,
@@ -831,7 +863,18 @@
 <footer>
     <p>&copy; 2026 Dream It Travel. All rights reserved. | Luxury Travel Planning & Experiences</p>
     <p style="margin-top: 0.5rem;">Travel Beyond the Ordinary.</p>
-    <h2>JenningsTech(sample page/non-rev)</h2>
+    <aside class="jt-ad" aria-label="Advertisement: Jennings Tech LLC web design">
+        <img class="jt-photo" src="images/eric-jennings.jpg" alt="Eric Jennings, Jennings Tech LLC">
+        <div class="jt-copy">
+            <div class="jt-kicker">Site designed by Jennings Tech LLC</div>
+            <div class="jt-head">Want a landing page like this? <span class="jt-price">Starting at $300</span></div>
+            <div class="jt-sub">Fast turnaround &middot; Mobile-ready &middot; <a href="mailto:admin@jenningstechllc.com?subject=Landing%20Page%20Inquiry">admin@jenningstechllc.com</a></div>
+        </div>
+        <a class="jt-qr" href="mailto:admin@jenningstechllc.com?subject=Landing%20Page%20Inquiry">
+            <img src="images/jt-qr.png" alt="QR code to email admin@jenningstechllc.com">
+            <span>Scan to email</span>
+        </a>
+    </aside>
 </footer>
 
 </body>
