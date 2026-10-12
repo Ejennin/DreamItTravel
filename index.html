@@ -148,7 +148,7 @@
         .cta-button-secondary {
             background: transparent;
             color: #d4af8f;
-            border: 2px solid #d4af8f;
+            border: 3px solid #d4af8f;
             padding: 1rem 2.5rem;
         }
 
@@ -541,36 +541,53 @@
             font-size: 0.9rem;
         }
 
-
-        /* JENNINGS TECH FOOTER AD */
-        .jt-ad {
-            max-width: 620px;
-            margin: 1.75rem auto 0.5rem;
+        /* DESIGNER CREDIT */
+        .designer-credit {
             display: flex;
             align-items: center;
-            gap: 1.25rem;
-            padding: 1rem 1.25rem;
-            background: linear-gradient(135deg, #0f2a22 0%, #111 100%);
-            border: 1px solid #d4af8f;
-            border-radius: 12px;
+            justify-content: center;
+            gap: 1.75rem;
+            margin: 2.25rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid #242424;
+            max-width: 760px;
             text-align: left;
-            color: #ddd;
         }
-        .jt-ad img.jt-photo {
-            width: 84px; height: 84px; border-radius: 50%;
-            object-fit: cover; border: 2px solid #d4af8f; flex-shrink: 0;
+        .designer-credit img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #d4af8f;
+            flex-shrink: 0;
         }
-        .jt-ad .jt-copy { flex: 1; font-family: 'Helvetica Neue', Arial, sans-serif; }
-        .jt-ad .jt-kicker { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: #d4af8f; }
-        .jt-ad .jt-head { font-size: 1.05rem; color: #fff; font-weight: 700; margin: 0.15rem 0; line-height: 1.3; }
-        .jt-ad .jt-price { color: #d4af8f; white-space: nowrap; }
-        .jt-ad .jt-sub { font-size: 0.8rem; color: #aaa; }
-        .jt-ad .jt-sub a { color: #d4af8f; text-decoration: none; }
-        .jt-ad .jt-qr { text-align: center; flex-shrink: 0; text-decoration: none; font-family: 'Helvetica Neue', Arial, sans-serif; }
-        .jt-ad .jt-qr img { width: 84px; height: 84px; background: #fff; padding: 4px; border-radius: 6px; display: block; }
-        .jt-ad .jt-qr span { font-size: 0.6rem; color: #999; letter-spacing: 1px; text-transform: uppercase; }
-        @media (max-width: 520px) {
-            .jt-ad { flex-direction: column; text-align: center; }
+        .designer-credit .credit-name {
+            color: #f5f5f5;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+        .designer-credit .credit-offer {
+            color: #d4af8f;
+            font-size: 1.3rem;
+            margin-top: 0.35rem;
+        }
+        .designer-credit .credit-scan {
+            color: #aaa;
+            font-size: 1rem;
+            margin-top: 0.35rem;
+        }
+        .designer-credit .credit-qr img {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            border: none;
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .designer-credit { flex-wrap: wrap; text-align: center; gap: 1rem; }
+            .designer-credit > div { flex-basis: 100%; order: -1; }
+            .designer-credit img, .designer-credit .credit-qr img { width: 100px; height: 100px; }
         }
 
         /* RESPONSIVE */
@@ -702,7 +719,7 @@
             <p>Jamaica • Barbados • St. Maarten • Turks & Caicos</p>
         </a>
         <!-- Using carnival.jpg here to capture vibrant Caribbean/Group festival vibes -->
-        <a href="#" class="destination-tile" style="background-image: url('carnival.jpg');">
+        <a href="#" class="destination-tile" style="background-image: url('images/carnival.jpg');">
             <h3>🎉 CARNIVAL & FESTIVALS</h3>
             <p>Immersive Cultural Celebrations & Group Trips</p>
         </a>
@@ -756,7 +773,7 @@
             <p><strong>Your time is valuable. Let us do the research.</strong></p>
         </div>
         <!-- Using villa-pool.jpg to highlight an exclusive villa/resort ambiance -->
-        <div class="difference-image" style="background-image: url('villa-pool.jpg');">
+        <div class="difference-image" style="background-image: url('images/villa-pool.jpg');">
             <span>Luxury isn't a destination.<br>It's the experience.</span>
         </div>
     </div>
@@ -768,7 +785,7 @@
     <div class="trips-grid">
         <div class="trip-card">
             <!-- Using resort-pool.jpg for upscale resort group packages -->
-            <div class="trip-image" style="background-image: url('resort-pool.jpg');"></div>
+            <div class="trip-image" style="background-image: url('images/resort-pool.jpg');"></div>
             <div class="trip-content">
                 <h3>Ghana: Accra & Kumasi</h3>
                 <p>Culture. History. Connection. Adventure.</p>
@@ -785,7 +802,7 @@
         </div>
         <div class="trip-card">
             <!-- Using cruise.jpg for the cruise spotlight card -->
-            <div class="trip-image" style="background-image: url('cruise.jpg');"></div>
+            <div class="trip-image" style="background-image: url('images/cruise.jpg');"></div>
             <div class="trip-content">
                 <h3>Upcoming Group Cruises</h3>
                 <p>Come Sail Away With Dream It Travel</p>
@@ -833,7 +850,7 @@
     <h3 class="section-subtitle">Your Dream Vacation Starts Here</h3>
     <p>Don't spend hours searching hundreds of websites.</p>
     <p>Let a travel professional do the research and help you create a trip worth remembering.</p>
-    <a href="#contact" class="cta-button" style="background: #000; color: #d4af8f; border: 2px solid #d4af8f; margin-top: 1.5rem;">START MY TRAVEL REQUEST</a>
+    <a href="#contact" class="cta-button" style="background: #000; color: #d4af8f; border: 3px solid #d4af8f; margin-top: 1.5rem;">START MY TRAVEL REQUEST</a>
     <p style="margin-top: 2rem; font-size: 0.9rem;">Research fees may apply. Travel protection is highly recommended.</p>
 </section>
 
@@ -863,18 +880,17 @@
 <footer>
     <p>&copy; 2026 Dream It Travel. All rights reserved. | Luxury Travel Planning & Experiences</p>
     <p style="margin-top: 0.5rem;">Travel Beyond the Ordinary.</p>
-    <aside class="jt-ad" aria-label="Advertisement: Jennings Tech LLC web design">
-        <img class="jt-photo" src="images/eric-jennings.jpg" alt="Eric Jennings, Jennings Tech LLC">
-        <div class="jt-copy">
-            <div class="jt-kicker">Site designed by Jennings Tech LLC</div>
-            <div class="jt-head">Want a landing page like this? <span class="jt-price">Starting at $300</span></div>
-            <div class="jt-sub">Fast turnaround &middot; Mobile-ready &middot; <a href="mailto:admin@jenningstechllc.com?subject=Landing%20Page%20Inquiry">admin@jenningstechllc.com</a></div>
+    <div class="designer-credit">
+        <img src="images/eric-jennings.jpg" alt="Eric Jennings, Jennings Tech LLC">
+        <div>
+            <div class="credit-name">Website by Jennings Tech LLC</div>
+            <div class="credit-offer">Landing pages starting at $300</div>
+            <div class="credit-scan">Scan to get a quote</div>
         </div>
-        <a class="jt-qr" href="mailto:admin@jenningstechllc.com?subject=Landing%20Page%20Inquiry">
-            <img src="images/jt-qr.png" alt="QR code to email admin@jenningstechllc.com">
-            <span>Scan to email</span>
+        <a href="mailto:ericjennings@jenningstechllc.com?subject=Landing%20Page%20Inquiry" class="credit-qr" aria-label="Email Jennings Tech LLC">
+            <img src="images/jennings-tech-qr.png" alt="QR code to email Jennings Tech LLC">
         </a>
-    </aside>
+    </div>
 </footer>
 
 </body>
